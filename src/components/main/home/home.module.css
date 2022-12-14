@@ -1,0 +1,63 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.container > * {
+  padding: 0.5rem;
+  flex: 1 1 500px;
+}
+
+.image-wrapper {
+  display: grid;
+}
+
+.profile__name--heading {
+  font-family: Dream Avenue;
+  text-transform: uppercase;
+  font-size: 4.375rem;
+  font-weight: 100;
+}
+
+.profile__detials-container {
+  font-family: Drugs;
+}
+
+.detials-title--h3 {
+  font-weight: 600;
+  letter-spacing: 0.125em;
+  text-transform: uppercase;
+}
+
+.profile__details--invitation {
+  composes: detials-title--h3;
+  padding: 1rem 2.325rem;
+  margin: 3rem 0;
+  box-sizing: content-box;
+  border: 2px solid white;
+  border-radius: 50%;
+  font-family: Drugs;
+  max-width: 140px;
+  text-align: center;
+  display: inline-block;
+}
+
+@media (min-width: 610px) {
+  .profile__name--heading {
+    font-size: 6.25rem !important;
+  }
+}
+@media (min-width: 950px) {
+  .container {
+    flex-direction: row;
+    column-gap: 1.5rem;
+  }
+
+  .container > * {
+    flex-basis: 0;
+  }
+
+  .profile__detials-container {
+    max-width: 360px;
+  }
+}

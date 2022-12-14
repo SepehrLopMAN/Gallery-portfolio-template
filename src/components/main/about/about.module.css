@@ -1,0 +1,46 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1500px;
+  margin: auto;
+  gap: 1rem;
+}
+
+.container > * {
+  padding: 0 0.75rem;
+  flex: 1 1 420px;
+}
+
+.info-container {
+  place-self: center;
+}
+
+.details-container {
+  font-family: Drugs;
+}
+
+.details-title {
+  font-size: 1.875rem;
+}
+
+.image-wrapper-container {
+  display: grid;
+}
+
+@media (min-width: 930px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .container > * {
+    flex-basis: 0;
+  }
+
+  .details-container {
+    max-width: 325px;
+  }
+
+  .page-title {
+    font-size: 6rem !important;
+  }
+}

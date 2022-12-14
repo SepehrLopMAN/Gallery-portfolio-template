@@ -1,0 +1,37 @@
+.info-container {
+  display: flex;
+  gap: 2rem;
+}
+
+.page-title {
+  font-size: 4rem !important;
+}
+
+.info-container > * {
+  padding: 1rem;
+}
+
+.info-container__image-wrapper {
+  flex: 1 1 0;
+}
+
+.details-container {
+  align-self: center;
+}
+.details-info {
+  margin-left: auto;
+  padding: 0 1.75rem;
+}
+.details-info > h1 {
+  letter-spacing: 0.125em;
+}
+
+@media (min-width: 900px) {
+  .page-title {
+    font-size: 6rem !important;
+  }
+
+  .commission-details--paragraph {
+    max-width: 350px;
+  }
+}

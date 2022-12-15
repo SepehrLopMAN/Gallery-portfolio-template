@@ -6,12 +6,12 @@ import {
 } from "../../styled.components";
 import styles from "./commissions.module.css";
 import wrapper1 from "../../../assets/images/commissions_image1.webp";
+import wrapper2 from "../../../assets/images/commissions_image2.webp";
+import wrapper3 from "../../../assets/images/commissions_image3.webp";
 
 const Pane = styled(PaneComponent)`
   border-radius: 50% 50% 0 0;
-  min-height: 625px;
   margin: 1rem auto;
-  max-width 625px;
 `;
 
 const HeadingSubTitle = styled(HeadingTitle)`
@@ -41,8 +41,17 @@ function CommissionsComponent() {
           </div>
         </div>
       </div>
-      <div></div>
-      <div></div>
+      <div className={styles.paneContainer}>
+        <PaneComponent sourceImage={wrapper3} />
+        <Pane sourceImage={wrapper2} />
+      </div>
+      <div className={styles["details-container--timeline"]}>
+        <HeadingSubTitle>Timeline</HeadingSubTitle>
+        <DetailsParagraph>
+          Pricing and timeline will also depend on the difficulty of the
+          commissioned artowrk. Feel free to message me for inquiries.
+        </DetailsParagraph>
+      </div>
     </>
   );
 }

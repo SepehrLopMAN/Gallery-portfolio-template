@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import shortid from "shortid";
 import styles from "./navMenu.module.css";
 
 function NavMenu() {
@@ -23,8 +24,8 @@ function NavMenu() {
       <nav className={styles.navbar__menu}>
         <ul>
           {["Home", "About", "Background", "Gallery", "Commissions"].map(
-            (val, ind) => (
-              <li key={ind} className={styles.menu__item}>
+            (val) => (
+              <li key={shortid.generate()} className={styles.menu__item}>
                 <NavLink
                   className={({ isActive }) =>
                     isActive ? styles["menu__item--active"] : ""

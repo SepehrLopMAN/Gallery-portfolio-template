@@ -37,7 +37,6 @@
 
 .paneContainer {
   display: flex;
-
   flex-direction: column;
   column-gap: 2rem;
   row-gap: 4rem;
